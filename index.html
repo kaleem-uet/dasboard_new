@@ -1,0 +1,491 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a
+          class="btn-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list" style="color: #ffff; font-size: 22px"></i>
+        </a>
+        <div
+          class="d-flex flex-row align-items-center justify-content-between"
+          style="width: 80%"
+        >
+          <div class="search-container">
+            <img
+              src="./src/img/Search.png"
+              alt=""
+              srcset=""
+              style="width: 24px; height: 24px; padding: 2px"
+            />
+            <input type="text" placeholder="Search" />
+          </div>
+          <img src="./src/img/notification.png" alt="" srcset="" />
+        </div>
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+
+    <!-- ///////////////////// Side Bar //////////////////////////////// -->
+
+    <div
+      class="offcanvas offcanvas-start sidebar-nav"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+          <img src="./src/img/logo.png" alt="" srcset="" class="logo" />
+          <ul class="sidebar-ul mt-5">
+            <li class="active">
+              <a href="#">
+                <img src="./src/img/home.png" alt="" class="icon-img" />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="de-active">
+              <a href="#">
+                <img
+                  src="./src/img/chart-success.png"
+                  alt=""
+                  class="icon-img"
+                />
+                <span class="nav-items">Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./src/img/chart-success.png"
+                  alt=""
+                  class="icon-img"
+                />
+                <span class="nav-items">Marketplace</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./src/img/logout.png" alt="" class="icon-img" />
+                <span class="nav-items">Logout</span>
+              </a>
+            </li>
+            <li class="profile">
+              <img src="./src/img/profile.png" alt="profile" />
+              <h6>Jhob Deo</h6>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ///////////////End///////////////// -->
+
+    <!-- //////////////////////main////////////////// -->
+    <main class="mt-5 pt-3">
+      <div class="container-fluid mb-5">
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-row align-items-center justify-content-between"
+            >
+              <div class="d-flex flex-column align-items-start">
+                <h4>Dashboard</h4>
+                <h6>Home > Dashboard</h6>
+              </div>
+              <div
+                class="d-flex flex-row align-items-center justify-content-center btn-listing"
+              >
+                <img src="./src/img/plus.png" alt="" srcset="" />
+                <span> Create Listing </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-1">
+            <div class="card-analysis">
+              <div class="d-flex flex-row justify-content-between">
+                <div>
+                  <h5>Welcome</h5>
+                  <p class="name">Jhon Doe</p>
+                  <h6>TER Dashboard</h6>
+                </div>
+                <img
+                  src="./src/img/undraw_business_analytics_re_tfh3 1.png"
+                  alt="card-img"
+                  style="width: 74px; height: 74px"
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-1">
+            <div class="card-analysis">
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <h6>$7,890</h6>
+                <img
+                  src="./src/img/any.png"
+                  alt="card-img"
+                  style="width: 24px; height: 24px"
+                  srcset=""
+                />
+              </div>
+              <p>Total Revenue</p>
+              <div class="d-flex flex-row align-items-center gap-1">
+                <img src="./src/img/Icon_Button.png" alt="" srcset="" />
+                <span> 24% </span>
+                <span> Since last week </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-1">
+            <div class="card-analysis">
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <h6>$7,890</h6>
+                <img
+                  src="./src/img/card-3.png"
+                  alt="card-img"
+                  style="width: 24px; height: 24px"
+                  srcset=""
+                />
+              </div>
+              <p>Total Revenue</p>
+              <div class="d-flex flex-row align-items-center gap-1">
+                <img src="./src/img/Icon_Button.png" alt="" srcset="" />
+                <span> 24% </span>
+                <span> Since last week </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-1">
+            <div class="card-analysis">
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <h6>$7,890</h6>
+                <img
+                  src="./src/img/Frame.png"
+                  alt="card-img"
+                  style="width: 24px; height: 24px"
+                  srcset=""
+                />
+              </div>
+              <p>Total Revenue</p>
+              <div class="d-flex flex-row align-items-center gap-1">
+                <img src="./src/img/Icon_Button.png" alt="" srcset="" />
+                <span> 24% </span>
+                <span> Since last week </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- chart -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="wrapper d-flex flex-column">
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <h6
+                  style="
+                    color: var(--white, #ececec);
+                    /* H5 */
+                    font-family: DM Sans;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                  "
+                >
+                  Reports
+                </h6>
+                <div class="select-year">
+                  <img
+                    src="./src//img/year.png"
+                    style="width: 12.598px; height: 12.602px"
+                    srcset=""
+                  />
+                  <select
+                    class="form-select form-select-sm bg-transparent border-0"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>This Year</option>
+                    <option value="1">2023</option>
+                    <option value="2">2022</option>
+                    <option value="3">2021</option>
+                  </select>
+                </div>
+              </div>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- table -->
+        <div class="row mt-5">
+          <div
+            class="d-flex flex-row align-items-center justify-content-between"
+          >
+            <h5 class="market_place">Marketplace</h5>
+            <a href="" class="view_all">View All</a>
+          </div>
+          <div class="col-12">
+            <div class="wrapper d-flex flex-column">
+              <ul class="nav nav-pills tabs">
+                <li class="nav-item in-active">
+                  <img
+                    src="./src/img/add_listing.png"
+                    style="width: 24px; height: 24px"
+                    srcset=""
+                  />
+                  <a class="nav-link" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item active">
+                  <img
+                    src="./src/img/mylisting.png"
+                    style="width: 24px; height: 24px"
+                    srcset=""
+                  />
+                  <a class="nav-link" href="#">My Listing</a>
+                </li>
+              </ul>
+              <div class="table-responsive mt-2" style="width: 100%">
+                <table
+                  class="table table-borderless data-table"
+                  style="color: white"
+                >
+                  <thead>
+                    <tr style="color: white">
+                      <th scope="col">Id</th>
+                      <th scope="col">State</th>
+                      <th scope="col">Type of Properties</th>
+                      <th scope="col">Entity Type</th>
+                      <th scope="col">Total Credit</th>
+                      <th scope="col">Sell Price</th>
+                      <th scope="col">Discount</th>
+                      <th scope="col">Open to offer</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+
+                    <tr>
+                      <td>01</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Lorem, ipsum.</td>
+                      <td>Type A</td>
+                      <td>$2342</td>
+                      <td>$2342</td>
+                      <td>0.3 cent</td>
+                      <td>Yes</td>
+                      <td>Posted</td>
+                      <td>action</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div
+                  class="d-flex flex-row align-items-center justify-content-between"
+                >
+                  <div class="d-flex flex-row align-items-center gap-1">
+                    <h6
+                      style="
+                        color: var(--natural-2, #d2e8ff);
+                        font-family: Open Sans;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                      "
+                    >
+                      Page:
+                    </h6>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                      style="
+                        border-radius: 8px;
+                        border: 1px solid var(--natual-7, #3f5369);
+                        background: var(--bg-3, #202c3b);
+                        width: 60px;
+                        color: white;
+                      "
+                    >
+                      <option selected>1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                    </select>
+                    <h6
+                      style="
+                        color: var(--natural-2, #d2e8ff);
+                        font-family: Open Sans;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                      "
+                    >
+                      of 10
+                    </h6>
+                  </div>
+
+                  <nav aria-label="Page navigation example" class="pagination">
+                    <ul class="pagination gap-1">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--//////////////////End//////////// -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./src/js/chart.js"></script>
+  </body>
+</html>
